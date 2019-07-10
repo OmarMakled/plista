@@ -1,3 +1,36 @@
+# Plista
+
+- [Mysql](#mysql)
+- [API](#api)
+- [Application](#application)
+
+# Mysql
+
+![db (1)](https://user-images.githubusercontent.com/3720473/60980843-84e97f80-a335-11e9-82b4-4a11d8d3789b.png)
+
+**showing all campaigns of advertiser #100 that have more than 50 ads**
+
+```sql
+SELECT count(ads.id) as count, campaigns.*
+FROM ads
+INNER JOIN campaigns on ads.campaign_id = campaigns.id
+WHERE campaigns.advertiser_id = 100
+GROUP BY campaign_id
+HAVING count > 50
+ORDER BY count DESC
+```
+
+**showing all campaigns that do not have any ads**
+
+```sql
+SELECT campaigns.*
+FROM campaigns
+LEFT JOIN ads on campaigns.id = ads.campaign_id
+WHERE ads.id IS NULL
+```
+
+# Api
+
 ## Schema & Current Version
 
 All API access is over HTTPS, and accessed from `https://api.plista.com`. All data is sent and received as JSON.
@@ -181,3 +214,8 @@ Status 404 Not Found
     "message": "Not found"
 }
 ```
+
+# Application
+
+- [Backend]()
+- [Frontend]()
