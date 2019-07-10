@@ -217,5 +217,5 @@ Status 404 Not Found
 
 # Application
 
-- [Backend]()
-- [Frontend]()
+- [Backend](https://github.com/OmarMakled/device-detector-server)
+- [Frontend](https://github.com/OmarMakled/device-detector-client)
