@@ -55,7 +55,7 @@ GET /ads/:id
 Status: 200 OK
 {
     "id": int,
-    "campaign_id": int,
+    "campaignId": int,
     "title": "string",
     "text": "string",
     "image": "string",
@@ -81,7 +81,7 @@ POST /ads
 
 ```
 {
-    "campaign_id": int,
+    "campaignId": int,
     "title": "string",
     "text": "string",
     "image": "string",
@@ -119,7 +119,7 @@ PUT /ads/:id
 
 ```
 {
-    "campaign_id": int,
+    "campaignId": int,
     "title": "string",
     "text": "string",
     "image": "string",
@@ -163,7 +163,7 @@ Status: 200 OK
     "ads": [
         {
             "id": int,
-            "campaign_id": int,
+            "campaignId": int,
             "title": "string",
             "text": "string",
             "image": "string",
@@ -197,7 +197,7 @@ Status: 200 OK
     "ads": [
         {
             "id": int,
-            "campaign_id": int,
+            "campaignId": int,
             "title": "string",
             "text": "string",
             "image": "string",
